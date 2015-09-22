@@ -1,4 +1,5 @@
 (function(BoplexClient){
+  "use strict";
 
   function MainFrame(element) {
     Boplex.BaseObject.call(this);
