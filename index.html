@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+    <title>boplex.js client</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<script src="lib/boplex.js/bin/boplex.js"></script>
+
+		<script src="src/boplexClient.boplexClient.js"></script>
+		<script src="src/boplexClient.mainFrame.js"></script>
+
+		<script src="src/food/boplexClient.product.js"></script>
+		<script src="src/food/boplexClient.food.js"></script>
+		<script src="src/food/boplexClient.fruit.js"></script>
+
+		<script src="src/shapes/boplexClient.shape.js"></script>
+		<script src="src/shapes/boplexClient.square.js"></script>
+		<script src="src/shapes/boplexClient.circle.js"></script>
+
+	</head>
+
+	<body>
+		<div id="clientFrame"></div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var mainFrame = new BoplexClient.MainFrame($('#clientFrame'));
+				mainFrame.echo("<h1>Testing...</h1>");
+				mainFrame.runTest();
+				mainFrame.echo("<h1>Test completed!<h1>");
+			})
+		</script>
+
+	</body>
+
+</html>
